@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <div id="app">
+            <h1 id="display">{{ display }}</h1>
+            <button @click="addNum(0)" id="num0">0</button>
+            <button @click="addNum(1)" id="num1">1</button>
+            <button @click="addNum(2)" id="num2">2</button>
+            <button @click="addNum(3)" id="num3">3</button>
+            <button @click="addNum(4)" id="num4">4</button>
+            <button @click="addNum(5)" id="num5">5</button>
+            <button @click="addNum(6)" id="num6">6</button>
+            <button @click="addNum(7)" id="num7">7</button>
+            <button @click="addNum(8)" id="num8">8</button>
+            <button @click="addNum(9)" id="num9">9</button>
+            <button @click="addOp('+')" id="sum">+</button>
+            <button @click="addOp('-')" id="sub">-</button>
+            <button @click="addOp('*')" id="mult">*</button>
+            <button @click="addOp('/')" id="div">/</button>
+            <button @click="addNum('.')" id="dot">.</button>
+            <button @click="equal()" id="equal">=</button>
+            <button @click="clear()" id="clear">C</button>
+        </div>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
